@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
+import PrincipalMessage from './../Principle/Index';
+import Facilities from './../Facilities/Index';
+import SchoolGallery from './../SchoolGallery/Index';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -45,26 +48,24 @@ const Header = () => {
               </a>
             </li>
             <li className='max-lg:border-b max-lg:py-3 px-3'>
-              <a href='javascript:void(0)' className='hover:text-[#007bff] text-[#007bff] block font-bold text-[15px]'>Home</a>
+              <Link to='/' className='hover:text-[#007bff] text-[#007bff] block font-bold text-[15px]'>Home</Link>
             </li>
             <li className='max-lg:border-b max-lg:py-3 px-3'>
-              <a href='javascript:void(0)' className='hover:text-[#007bff] text-[#333] block font-bold text-[15px]'>Team</a>
+              <Link to='/SchoolInfo' className='hover:text-[#007bff] text-[#333] block font-bold text-[15px]'>About</Link>
             </li>
             <li className='max-lg:border-b max-lg:py-3 px-3'>
-              <a href='javascript:void(0)' className='hover:text-[#007bff] text-[#333] block font-bold text-[15px]'>Feature</a>
+              <Link to='/principal-message' className='hover:text-[#007bff] text-[#333] block font-bold text-[15px]'>PrincipalMessage</Link>
             </li>
             <li className='max-lg:border-b max-lg:py-3 px-3'>
-              <a href='javascript:void(0)' className='hover:text-[#007bff] text-[#333] block font-bold text-[15px]'>Blog</a>
+              <Link to='/facilities' className='hover:text-[#007bff] text-[#333] block font-bold text-[15px]'>Facilities</Link>
             </li>
             <li className='max-lg:border-b max-lg:py-3 px-3'>
-              <a href='javascript:void(0)' className='hover:text-[#007bff] text-[#333] block font-bold text-[15px]'>About</a>
+              <Link to='/gallery' className='hover:text-[#007bff] text-[#333] block font-bold text-[15px]'>SchoolGallery</Link>
             </li>
             <li className='max-lg:border-b max-lg:py-3 px-3'>
-              <a href='javascript:void(0)' className='hover:text-[#007bff] text-[#333] block font-bold text-[15px]'>Contact</a>
+              <Link to='/' className='hover:text-[#007bff] text-[#333] block font-bold text-[15px]'>Contact</Link>
             </li>
-            <li className='max-lg:border-b max-lg:py-3 px-3'>
-              <a href='javascript:void(0)' className='hover:text-[#007bff] text-[#333] block font-bold text-[15px]'>Source</a>
-            </li>
+          
           </ul>
         </div>
 
