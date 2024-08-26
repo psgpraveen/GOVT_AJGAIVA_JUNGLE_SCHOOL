@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header className='shadow-md font-sans tracking-wide relative z-50'>
-      <section className='py-2 bg-[#007bff] text-white text-right px-10'>
+      <section className='py-2  hidden lg:block bg-[#007bff] text-white text-right px-10'>
         <p className='text-sm'>
           <strong className="mx-3">Address:</strong>SWF New York 185669
           <strong className="mx-3">Contact No:</strong>1800333665
