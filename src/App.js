@@ -21,7 +21,7 @@ function App() {
           <Facilities />
           <SchoolGallery />
         </>} />
-        <Route path="/school-info" element={<SchoolInfo />} />
+        <Route path="/SchoolInfo" element={<SchoolInfo />} />
         <Route path="/principal-message" element={<PrincipalMessage />} />
         <Route path="/facilities" element={<Facilities />} />
         <Route path="/gallery" element={<SchoolGallery />} />
