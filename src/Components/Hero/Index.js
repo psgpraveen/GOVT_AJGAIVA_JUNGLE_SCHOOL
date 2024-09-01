@@ -12,7 +12,7 @@ const Index = () => {
      
       <div className="relative flex flex-col items-center p-4 sm:max-w-xl">
         <p className="mb-4 text-center text-black text-lg  sm:text-xl md:mb-8">Very proud to introduce</p>
-        <h1 className="mb-8 text-center text-black text-4xl font-bold  sm:text-5xl md:mb-12 md:text-6xl"> HR. SEC. SCHOOL AJGAIVA JUNGLE, BASTI
+        <h1 className="mb-8 text-center text-black text-4xl font-bold  sm:text-5xl md:mb-12 md:text-6xl"> GOVT. HR. SEC. SCHOOL AJGAIVA JUNGLE, BASTI
         </h1>
 
         {/* <div className="flex w-full flex-col text-black gap-2.5 sm:flex-row sm:justify-center">
