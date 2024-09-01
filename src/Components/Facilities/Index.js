@@ -23,7 +23,33 @@ const Facilities = () => {
       title: 'Library',
       description: 'School library is renovated according to the need. It is replenished every year with additional supply of books on different subjects and themes. Library has a spacious reading room where students can study.',
     },
+    {
+      icon: '⚽', // Replace with an actual icon if needed
+      title: 'Sports Facilities',
+      description: 'We provide a wide range of sports facilities including a large playground, basketball court, and equipment for various indoor and outdoor games to encourage physical fitness and teamwork among students.',
+    },
+    {
+      icon: '🏥', // Replace with an actual icon if needed
+      title: 'Medical Room',
+      description: 'The school has a well-equipped medical room with a qualified nurse and first-aid facilities. Regular health check-ups are also organized to monitor the health and well-being of the students.',
+    },
+    {
+      icon: '🚌', // Replace with an actual icon if needed
+      title: 'Transportation',
+      description: 'Our school provides safe and reliable transportation services for students. We have a fleet of buses equipped with GPS tracking and attended by well-trained staff to ensure students’ safety during their commute.',
+    },
+    {
+      icon: '🎨', // Replace with an actual icon if needed
+      title: 'Art and Craft Room',
+      description: 'The school has a dedicated art and craft room where students can express their creativity through various forms of art, including painting, sculpture, and other crafts, under the guidance of skilled instructors.',
+    },
+    {
+      icon: '🎤', // Replace with an actual icon if needed
+      title: 'Auditorium',
+      description: 'Our state-of-the-art auditorium hosts school events, cultural programs, and competitions. It is equipped with modern audio-visual systems, comfortable seating, and ample space to accommodate a large audience.',
+    },
   ];
+  
 
   return (
     <div className="py-12 bg-gray-50">

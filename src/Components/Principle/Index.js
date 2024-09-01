@@ -7,7 +7,8 @@ const PrincipalMessage = () => {
       <div className="mb-12">
         <h2 className="text-gray-800 text-3xl font-extrabold">PRINCIPAL'S MESSAGE</h2>
         <p className="text-gray-800 text-sm mt-4 leading-relaxed">
-         Education at GOVT HR SEC AJGAIVA JUNGLE School is designed to meet the needs of each individual student. 
+         Education at  HR. SEC. SCHOOL AJGAIVA JUNGLE, BASTI
+         is designed to meet the needs of each individual student. 
         </p>
       </div>
 
@@ -35,12 +36,14 @@ const PrincipalMessage = () => {
           </svg>
 
           <p className="text-gray-800 text-sm mt-6 leading-relaxed">
-            I am happy and delighted to address you all through the school’s online platform. Education at GOVT HR SEC AJGAIVA JUNGLE School is designed to meet the needs of each individual student. It is our foremost priority to bring out the best in your children, but we are not enough. You, the parents, must play a key role in shaping children. Children are always the ultimate winners on the school campus, making the world a better place to live.
+            I am happy and delighted to address you all through the school’s. Education at  HR. SEC. SCHOOL AJGAIVA JUNGLE, BASTI
+            is designed to meet the needs of each individual student. It is our foremost priority to bring out the best in your children, but we are not enough. You, the parents, must play a key role in shaping children. Children are always the ultimate winners on the school campus, making the world a better place to live.
           </p>
 
           <div className="mt-4">
             <p className="text-gray-800 text-base font-semibold">Principal Name</p>
-            <p className="text-xs text-gray-400 mt-0.5">Principal, GOVT HR SEC AJGAIVA JUNGLE</p>
+            <p className="text-xs text-gray-400 mt-0.5">Principal, GOVT  HR. SEC. SCHOOL AJGAIVA JUNGLE, BASTI
+            </p>
           </div>
 
           {/* <div className="flex justify-end mt-4 space-x-4">

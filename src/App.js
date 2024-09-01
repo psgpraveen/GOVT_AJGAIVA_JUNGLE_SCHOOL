@@ -9,7 +9,8 @@ import PrincipalMessage from './Components/Principle/Index';
 import Facilities from './Components/Facilities/Index';
 import SchoolGallery from './Components/SchoolGallery/Index';
 import Err from './Components/Error/Index'; // for handling 404 pages
-
+import Teachers from './Components/Teacher/Index';
+import Contact from './Components/Contact/Index'
 function App() {
   return (
     <Router>
@@ -19,11 +20,14 @@ function App() {
           <SchoolInfo />
           <PrincipalMessage />
           <Facilities />
+          <Teachers/>
           <SchoolGallery />
+          <Contact/>
         </>} />
         <Route path="/SchoolInfo" element={<SchoolInfo />} />
         <Route path="/principal-message" element={<PrincipalMessage />} />
         <Route path="/facilities" element={<Facilities />} />
+
         <Route path="/gallery" element={<SchoolGallery />} />
         <Route path="*" element={<Err />} />
       </Routes>
