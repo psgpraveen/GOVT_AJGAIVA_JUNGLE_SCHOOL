@@ -4,18 +4,39 @@ import defaultImage from '../Img/school.jpg'; // Placeholder image if teacher im
 
 const teachersData = [
   {
-    name: 'ABHIMANYU KUMAR MISHRA',
+    name: 'SURESH CHANDRA VERMA',
     gender: 'Male',
-    mobile: '8299049437',
-    dob: '20/06/1976',
-    doj: '24/09/2015',
-    subject: 'Social Science',
-    qualification: 'M.A, B.Ed',
-    experience: '7 Years 9 Months',
+    mobile: '9450564451',
+    dob: '30/07/1965',
+    doj: '07/07/1997',
+    subject: 'Chemistry',
+    qualification: 'M.Sc, B.Ed',
+    experience: '25 Years 11 Months',
+    post: 'Principal',
+    image: defaultImage,
+  },{
+    name: 'VINOD KUMAR YADAV',
+    gender: 'Male',
+    mobile: '9918218427',
+    dob: '28/12/1987',
+    doj: '26/10/2020',
+    subject: 'Physical Education',
+    qualification: 'M.A, Other',
+    experience: '2 Years 8 Months',
     post: 'Assistant Teacher',
     image: defaultImage,
-  },
-  {
+  }, {
+    name: 'VIVEK MISHRA',
+    gender: 'Male',
+    mobile: '8299036073',
+    dob: '05/07/1984',
+    doj: '03/11/2020',
+    subject: 'Science',
+    qualification: 'M.Sc, B.Ed',
+    experience: '2 Years 7 Months',
+    post: 'Assistant Teacher',
+    image: defaultImage,
+  },{
     name: 'HARI OM SHARAN GIRI',
     gender: 'Male',
     mobile: '9839300120',
@@ -27,6 +48,7 @@ const teachersData = [
     post: 'Assistant Teacher',
     image: defaultImage,
   },
+   
   {
     name: 'LAL YOGENDRA',
     gender: 'Male',
@@ -40,41 +62,20 @@ const teachersData = [
     image: defaultImage,
   },
   {
-    name: 'SURESH CHANDRA VERMA',
+    name: 'ABHIMANYU KUMAR MISHRA',
     gender: 'Male',
-    mobile: '9450564451',
-    dob: '30/07/1965',
-    doj: '07/07/1997',
-    subject: 'Chemistry',
-    qualification: 'M.Sc, B.Ed',
-    experience: '25 Years 11 Months',
-    post: 'Principal',
-    image: defaultImage,
-  },
-  {
-    name: 'VINOD KUMAR YADAV',
-    gender: 'Male',
-    mobile: '9918218427',
-    dob: '28/12/1987',
-    doj: '26/10/2020',
-    subject: 'Physical Education',
-    qualification: 'M.A, Other',
-    experience: '2 Years 8 Months',
+    mobile: '8299049437',
+    dob: '20/06/1976',
+    doj: '24/09/2015',
+    subject: 'Social Science',
+    qualification: 'M.A, B.Ed',
+    experience: '7 Years 9 Months',
     post: 'Assistant Teacher',
     image: defaultImage,
   },
-  {
-    name: 'VIVEK MISHRA',
-    gender: 'Male',
-    mobile: '8299036073',
-    dob: '05/07/1984',
-    doj: '03/11/2020',
-    subject: 'Science',
-    qualification: 'M.Sc, B.Ed',
-    experience: '2 Years 7 Months',
-    post: 'Assistant Teacher',
-    image: defaultImage,
-  },
+ 
+  
+ 
 ];
 
 const Teachers = () => {
