@@ -119,7 +119,7 @@ const Teachers = () => {
               }}
               transition={{ duration: 0.5 }}
             >
-              <div className="relative w-full p-32 h-48 overflow-hidden rounded-t-lg mb-4">
+              <div className="relative w-full lg:p-40 h-48 overflow-hidden rounded-t-lg mb-4">
                 <img 
                   src={teacher.image || defaultImage} 
                   alt={teacher.name ? `Photo of ${teacher.name}` : 'Teacher'} 
