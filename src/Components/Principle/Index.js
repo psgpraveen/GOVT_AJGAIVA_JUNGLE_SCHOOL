@@ -41,8 +41,8 @@ const PrincipalMessage = () => {
           </p>
 
           <div className="mt-4">
-            <p className="text-gray-800 text-base font-semibold">Suresh Chandra Verma</p>
-            <p className="text-xs text-gray-400 mt-0.5">Principal, GOVT  HR. SEC. SCHOOL AJGAIVA JUNGLE, BASTI
+            <p className="text-gray-800 text-base font-semibold">SURESH CHANDRA VERMA</p>
+            <p className="text-xs text-gray-400 mt-0.5">Principal, GOVT. HR. SEC. SCHOOL AJGAIVA JUNGLE, BASTI
             </p>
           </div>
 

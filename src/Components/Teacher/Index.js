@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import AbhimanyuImage from './teacherImages/ABHIMANYU_KUMAR_MISHRA.jpeg';
-import HariOmImage from './teacherImages/HARI_OM_SHARAN_GIRI.jpeg';
+import VivekImage from './teacherImages/ABHIMANYU_KUMAR_MISHRA.jpeg';
+import VinodImage from './teacherImages/HARI_OM_SHARAN_GIRI.jpeg';
 import LalYogendraImage from './teacherImages/LAL.jpg';
-import SureshImage from './teacherImages/SURESH_CHANDRA_VERMA.jpeg';
-import VinodImage from './teacherImages/VINOD_KUMAR_YADAV.jpeg';
-import VivekImage from './teacherImages/VIVEK_MISHRA.jpeg';
+import SureshImage from './teacherImages/Suresh.jpg';
+import  HariOmImage from './teacherImages/VINOD_KUMAR_YADAV.jpeg';
+import  AbhimanyuImage from './teacherImages/VIVEK_MISHRA.jpeg';
 import defaultImage from '../Img/school.jpg'; // Placeholder image if teacher image is not available
 
 const teachersData = [
@@ -119,7 +119,7 @@ const Teachers = () => {
               }}
               transition={{ duration: 0.5 }}
             >
-              <div className="relative w-full lg:p-40 h-48 overflow-hidden rounded-t-lg mb-4">
+              <div className="relative mx-auto w-[70%] md:p-[10rem] sm:p-[10rem] lg:p-40 h-48 overflow-hidden rounded-t-lg mb-4">
                 <img 
                   src={teacher.image || defaultImage} 
                   alt={teacher.name ? `Photo of ${teacher.name}` : 'Teacher'} 

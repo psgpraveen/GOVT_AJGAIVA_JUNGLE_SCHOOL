@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import schoolImage from '../Img/school.jpg';
+import schoolImage from './school.jpg';
 
 const SchoolInfo = () => {
   const [dis,setdis] = useState(false)
@@ -11,7 +11,7 @@ const SchoolInfo = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center bg-gray-50 shadow-lg rounded-lg overflow-hidden">
         
         <div className="p-6 md:w-1/2">
-          <h3 className="text-xl font-semibold text-yellow-600 uppercase">GOVT. HR. SEC. AJGAIVA JUNGLE</h3>
+          <h3 className="text-xl font-semibold text-yellow-600 uppercase">GOVT. HR. SEC. SCHOOL AJGAIVA JUNGLE, BASTI</h3>
           <h2 className="text-3xl font-bold text-blue-900 mt-2 mb-4">Our School</h2>
           <p className="text-gray-700 mb-4">
             GOVT HR SEC AJGAIVA JUNGLE was established in 2012 and is managed by the Department of Education. Located in the SALTOVA GOPALPUR block of BASTI district, Uttar Pradesh, the school is situated in a rural area. The school caters to Grades 9 and 10 and is co-educational. 

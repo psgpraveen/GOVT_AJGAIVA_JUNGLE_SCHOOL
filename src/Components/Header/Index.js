@@ -18,7 +18,7 @@ const Header = () => {
     <header className='shadow-md font-sans tracking-wide relative z-50'>
       <div className='flex flex-wrap items-center justify-between gap-4 px-10 py-4 bg-white min-h-[70px]'>
         <a href="/" className='lg:hidden'>
-          <span className='w-36 font-bold text-black'>GOVT. HR. SEC. AJGAIVA JUNGLE</span>
+          <span className='w-36 font-bold text-black'>GOVT. HR. SEC. AJGAIVA JUNGLE, BASTI</span>
         </a>
 
         <nav
