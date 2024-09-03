@@ -1,5 +1,5 @@
 import React from 'react';
-import principalImage from '../Img/school.jpg'; 
+import principalImage from './Principal.jpg'; 
 
 const PrincipalMessage = () => {
   return (
@@ -41,7 +41,7 @@ const PrincipalMessage = () => {
           </p>
 
           <div className="mt-4">
-            <p className="text-gray-800 text-base font-semibold">Principal Name</p>
+            <p className="text-gray-800 text-base font-semibold">Suresh Chandra Verma</p>
             <p className="text-xs text-gray-400 mt-0.5">Principal, GOVT  HR. SEC. SCHOOL AJGAIVA JUNGLE, BASTI
             </p>
           </div>

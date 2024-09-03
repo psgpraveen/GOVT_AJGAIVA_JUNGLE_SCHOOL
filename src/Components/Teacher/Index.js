@@ -1,5 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import AbhimanyuImage from './teacherImages/ABHIMANYU_KUMAR_MISHRA.jpeg';
+import HariOmImage from './teacherImages/HARI_OM_SHARAN_GIRI.jpeg';
+import LalYogendraImage from './teacherImages/LAL.jpg';
+import SureshImage from './teacherImages/SURESH_CHANDRA_VERMA.jpeg';
+import VinodImage from './teacherImages/VINOD_KUMAR_YADAV.jpeg';
+import VivekImage from './teacherImages/VIVEK_MISHRA.jpeg';
 import defaultImage from '../Img/school.jpg'; // Placeholder image if teacher image is not available
 
 const teachersData = [
@@ -13,7 +19,7 @@ const teachersData = [
     qualification: 'M.Sc, B.Ed',
     experience: '25 Years 11 Months',
     post: 'Principal',
-    image: defaultImage,
+    image: SureshImage,
   },{
     name: 'VINOD KUMAR YADAV',
     gender: 'Male',
@@ -24,7 +30,7 @@ const teachersData = [
     qualification: 'M.A, Other',
     experience: '2 Years 8 Months',
     post: 'Assistant Teacher',
-    image: defaultImage,
+    image: VinodImage,
   }, {
     name: 'VIVEK MISHRA',
     gender: 'Male',
@@ -35,7 +41,7 @@ const teachersData = [
     qualification: 'M.Sc, B.Ed',
     experience: '2 Years 7 Months',
     post: 'Assistant Teacher',
-    image: defaultImage,
+    image: VivekImage,
   },{
     name: 'HARI OM SHARAN GIRI',
     gender: 'Male',
@@ -46,9 +52,8 @@ const teachersData = [
     qualification: 'M.A, B.Ed',
     experience: '1 Year 10 Months',
     post: 'Assistant Teacher',
-    image: defaultImage,
+    image: HariOmImage,
   },
-   
   {
     name: 'LAL YOGENDRA',
     gender: 'Male',
@@ -59,7 +64,7 @@ const teachersData = [
     qualification: 'M.A, B.Ed',
     experience: '1 Year 10 Months',
     post: 'Assistant Teacher',
-    image: defaultImage,
+    image: LalYogendraImage,
   },
   {
     name: 'ABHIMANYU KUMAR MISHRA',
@@ -71,11 +76,8 @@ const teachersData = [
     qualification: 'M.A, B.Ed',
     experience: '7 Years 9 Months',
     post: 'Assistant Teacher',
-    image: defaultImage,
+    image: AbhimanyuImage,
   },
- 
-  
- 
 ];
 
 const Teachers = () => {
@@ -117,12 +119,14 @@ const Teachers = () => {
               }}
               transition={{ duration: 0.5 }}
             >
-              <img 
-                src={teacher.image || defaultImage} 
-                alt={teacher.name ? `Photo of ${teacher.name}` : 'Teacher'} 
-                className="w-full h-48 object-cover rounded-t-lg mb-4"
-                loading="lazy"
-              />
+              <div className="relative w-full p-32 h-48 overflow-hidden rounded-t-lg mb-4">
+                <img 
+                  src={teacher.image || defaultImage} 
+                  alt={teacher.name ? `Photo of ${teacher.name}` : 'Teacher'} 
+                  className="w-full h-full object-cover absolute inset-0"
+                  loading="lazy"
+                />
+              </div>
               <h3 className="text-xl font-semibold text-yellow-600">{teacher.name}</h3>
               <p className="text-gray-700"><strong>Gender:</strong> {teacher.gender}</p>
               <p className="text-gray-700"><strong>Mobile:</strong> {teacher.mobile}</p>

@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import imgs from '../Img/school.jpg'
+
+// Dynamically require all images in the 'img' directory
+const importAll = (r) => r.keys().map(r);
+const images = importAll(require.context('./img', false, /\.(png|jpe?g|svg)$/));
+
 const SchoolGallery = () => {
-  const images = [
-    { src:imgs , alt: 'Image 1' },
-    { src:imgs , alt: 'Image 2' },
-    { src:imgs , alt: 'Image 3' },
-    { src:imgs , alt: 'Image 4' },
-    // Add more images as needed
-  ];
+  const [visibleImages, setVisibleImages] = useState(4); // Start with 4 images
+
+  // Function to show more images
+  const showMoreImages = () => {
+    setVisibleImages((prevVisibleImages) => prevVisibleImages + 4); 
+    console.log('imag>>>',images);
+  };
+
+  // Function to show fewer images
+  const showLessImages = () => { 
+    
+    setVisibleImages((prevVisibleImages) => (prevVisibleImages > 4 ? prevVisibleImages - 4 : 4)); }
 
   return (
     <div className="py-12 bg-gray-50">
@@ -22,7 +31,7 @@ const SchoolGallery = () => {
         transition={{ duration: 0.8 }}
         className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6"
       >
-        {images.map((image, index) => (
+        {images.slice(0, visibleImages).map((src, index) => (
           <motion.div
             key={index}
             className="overflow-hidden rounded-lg shadow-lg"
@@ -33,18 +42,31 @@ const SchoolGallery = () => {
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             <img
-              src={image.src}
-              alt={image.alt}
+              src={src}
+              alt={`Image ${index + 1}`}
               className="w-full h-full object-cover"
             />
           </motion.div>
         ))}
       </motion.div>
 
-      <div className="text-center mt-8">
-        <button className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition">
-          View All
-        </button>
+      <div className="text-center mt-8 flex justify-center gap-4">
+        {visibleImages < images.length && (
+          <button
+            onClick={showMoreImages}
+            className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition"
+          >
+            Show More
+          </button>
+        )}
+        {visibleImages > 4 && (
+          <button
+            onClick={showLessImages}
+            className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition"
+          >
+            Show Less
+          </button>
+        )}
       </div>
     </div>
   );
