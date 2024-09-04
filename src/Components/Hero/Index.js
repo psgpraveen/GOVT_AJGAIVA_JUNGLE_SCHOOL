@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import school1 from './School.jpg';
 import school2 from './School1jpg.jpg';
 import school3 from './School2.jpg';
-import school4 from './School1jpg.jpg';
+import school4 from './School3.jpg';
 
 const Index = () => {
   const images = [school1, school2, school3, school4];
