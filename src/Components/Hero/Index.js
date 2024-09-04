@@ -44,7 +44,7 @@ const Index = () => {
   };
 
   return (
-    <section className="relative h-96 flex items-center justify-center overflow-hidden bg-gray-900 py-20 shadow-2xl">
+    <section className="relative h-96  lg:h-[32rem] flex items-center justify-center overflow-hidden bg-gray-900 py-20 shadow-2xl">
       {/* Background Image */}
       <img
         src={images[currentImage]}
