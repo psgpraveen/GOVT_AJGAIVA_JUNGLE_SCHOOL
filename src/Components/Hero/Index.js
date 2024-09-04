@@ -23,48 +23,48 @@ const Index = () => {
 
   return (
     <>
-      <section className="relative h-48 flex flex-1 items-center justify-center overflow-hidden bg-gray-100 py-16 shadow-lg md:py-20 xl:py-48">
+      <section className="relative h-96 flex items-center justify-center overflow-hidden bg-gray-900 py-20 shadow-2xl">
         {/* Background Image */}
         <img
           src={images[currentImage]}
           loading="lazy"
           alt="School"
-          className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-500 ease-in-out ${
-            fadeTransition ? 'opacity-100' : 'opacity-50'
+          className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-700 ease-in-out transform ${
+            fadeTransition ? 'opacity-100 scale-105' : 'opacity-0 scale-100'
           }`}
         />
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent z-10"></div>
 
         {/* Cascading Images */}
-        <div className="relative flex flex-col items-center p-4 sm:max-w-xl z-20">
+        <div className="relative flex flex-col items-center p-4 sm:max-w-xl z-20 space-y-4">
           <div className="relative">
             <img
               src={school2}
               loading="lazy"
               alt="School"
-              className="absolute left-8 top-8 h-48 w-48 object-cover shadow-lg transform rotate-2"
+              className="absolute left-10 top-8 h-36 w-36 blur-sm object-cover shadow-xl transform rotate-3 transition-transform duration-500 hover:scale-105"
             />
             <img
               src={school3}
               loading="lazy"
               alt="School"
-              className="absolute left-14 top-14 h-48 w-48 object-cover shadow-lg transform rotate-4"
+              className="absolute left-20 top-14 h-36 w-36 blur-sm object-cover shadow-xl transform rotate-6 transition-transform duration-500 hover:scale-105"
             />
             <img
               src={school4}
               loading="lazy"
               alt="School"
-              className="absolute left-20 top-20 h-48 w-48 object-cover shadow-lg transform rotate-6"
+              className="absolute left-32 top-20 h-36 w-36 blur-sm object-cover shadow-xl transform rotate-9 transition-transform duration-500 hover:scale-105"
             />
           </div>
         </div>
 
         {/* Text Overlay */}
-        <div className="relative z-30 text-center text-white transition-opacity duration-500 ease-in-out">
-          <p className="mb-4 text-lg sm:text-xl md:mb-8">Very proud to introduce</p>
-          <h1 className="mb-8 text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
-            GOVT. HR. SEC. SCHOOL AJGAIVA JUNGLE, BASTI
+        <div className="relative z-30 text-center text-white transition-opacity duration-700 ease-in-out">
+          <p className="mb-4 text-lg font-light tracking-widest uppercase">Proudly Presenting</p>
+          <h1 className="text-4xl font-bold uppercase tracking-wide sm:text-5xl md:text-6xl">
+            Govt. Hr. Sec. School Ajgaiva Jungle, Basti
           </h1>
         </div>
       </section>

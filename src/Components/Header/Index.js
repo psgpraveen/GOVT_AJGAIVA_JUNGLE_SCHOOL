@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <header className='shadow-md font-sans tracking-wide relative z-50'>
-      <div className='flex flex-wrap items-center justify-between gap-4 px-10 py-4 bg-white min-h-[70px]'>
+      <div className='flex flex-wrap items-center justify-between gap-4 px-6 p-4 lg:pb-0 bg-white min-h-[60px]'>
         <a href="/" className='lg:hidden'>
           <span className='w-36 font-bold text-black'>GOVT. HR. SEC. AJGAIVA JUNGLE, BASTI</span>
         </a>
@@ -48,7 +48,7 @@ const Header = () => {
           <ul className='lg:flex lg:gap-[6rem]'>
             <li className='mb-6 hidden lg:block'>
               <a href="/" className='text-[black] font-bold text-[15px]'>
-                GOVT. HR. SEC. AJGAIVA JUNGLE
+                GOVT. HR. SEC. AJGAIVA JUNGLE, BASTI
               </a>
             </li>
             <div className='lg:flex lg:gap-x-5 ' ><li className='max-lg:border-b max-lg:py-3 px-3'>
