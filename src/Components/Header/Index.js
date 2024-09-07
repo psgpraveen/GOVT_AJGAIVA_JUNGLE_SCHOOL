@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <header className='shadow-md font-sans tracking-wide relative z-50'>
-      <div className='flex flex-wrap items-center justify-between gap-4 px-6 p-4 lg:pb-0 bg-white min-h-[60px]'>
+      <div className='flex flex-wrap items-center justify-between gap-4 mb:px-6 p-4 lg:pb-0 bg-white min-h-[60px]'>
         <a href="/" className='lg:hidden'>
           <span className='w-36 font-bold text-black'>GOVT. HR. SEC. AJGAIVA JUNGLE, BASTI</span>
         </a>
